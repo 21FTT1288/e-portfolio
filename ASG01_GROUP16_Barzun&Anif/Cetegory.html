@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Super Munch Market</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.imagecompare.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="javascript/index.js"></script>
+  <script src="javascript/jquery.imagecompare.js"></script>
+
+
+<style type="text/css">
+
+.navbar-default{background-color: #ffffff }
+.main{background-color: #ff4128;; margin: auto }
+.container{background-color: #deb841}
+.navbar-brand{color: rgb(255, 251, 30);}
+.row{width:700px; height: 500px; margin: auto; position:relative; bottom: 25px;}
+#Logo{height: 70px; width: 70px;}
+img{width: 550px; height: 450px; margin: auto;}
+  
+a{border: 1px solid;}
+h2{text-align: center;}
+body{margin: auto;background-color: #f5f5f5}
+.center{text-align: center;}
+h1{margin: auto; font-family: monospace;}
+.one{color: yellow; display: inline;}
+h4{text-align: center;}
+.panel-title{text-align: center;}
+.test{padding-top: 30px;}
+p{text-align: center;}
+.collapse{background-color: #6d6a75;;}
+#color{background-color: darkcyan;}
+.mu{justify-content: center; margin: auto;}
+.tt {display: none;}
+
+.ttt::after {
+  content : "\0020";
+  animation: pulse 1s infinite;
+  color: transparent;
+  border-right: 3px solid black;
+  margin-left: 4px;
+}
+
+@keyframes pulse {
+  0% {
+     border-right: 3px solid  black;
+  }
+  50% {
+     border-right: 3px solid  transparent;
+  }
+  100% {
+     border-right: 3px solid  black;
+  }
+}
+
+/*For Mobile view*/ /*<360px*/
+/*    @media screen and (max-width: 360px)
+  {
+.thumbnail{width: 100px; height: 10x;}
+}*/
+</style>
+
+</head>
+<body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand"><img id="Logo" src="Logo.png" ></div>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="calender.html">Calender</a></li>
+      <li><a href="branch.html">Our Branches</a></li>
+      <li><a href="PromotionsPage.html">Promotions</a></li>
+      <li   class="active "><a href="Cetegory.html">Category</a></li>
+      <li><a href="feedbackform.html">Write a Feedback</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<div class="jumbotron main text-center" >
+ <div ><img src="Logo.png" alt=""></div> 
+</div>
+
+<div class="container">
+
+<ul class="jqueryImageCompare" data-ratio="4x3">
+    <li data-image="images/lego.jpg" data-title="Toys"></li>
+    <li data-image="images/food.jpg" data-title="Food"></li>
+    <li data-image="images/cloth.jpg" data-title="Cloths"></li>
+    <li data-image="images/appliances.jpg" data-title="Appliances"></li>
+  </ul>
+
+</div>
+
+</body>
+</html>

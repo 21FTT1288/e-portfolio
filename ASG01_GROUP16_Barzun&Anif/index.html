@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Super Munch Market</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="javascript/index.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+<style type="text/css">
+
+.navbar-default{background-color: #ffffff }
+.main{background-color: #ff4128;; margin: auto }
+.container{background-color: #deb841}
+.navbar-brand{color: rgb(255, 251, 30);}
+.row{width:700px; height: 500px; margin: auto; position:relative; bottom: 25px;}
+#Logo{height: 70px; width: 70px;}
+img{width: 550px; height: 450px; margin: auto;}
+  
+a{border: 1px solid;}
+h2{text-align: center;}
+body{margin: auto;background-color: #f5f5f5}
+.center{text-align: center;}
+h1{margin: auto; font-family: monospace;}
+.one{color: yellow; display: inline;}
+h4{text-align: center;}
+.panel-title{text-align: center;}
+.test{padding-top: 30px;}
+p{text-align: center;}
+.collapse{background-color: #6d6a75;;}
+#color{background-color: darkcyan;}
+.mu{justify-content: center; margin: auto;}
+.tt {display: none;}
+
+.ttt::after {
+  content : "\0020";
+  animation: pulse 1s infinite;
+  color: transparent;
+  border-right: 3px solid black;
+  margin-left: 4px;
+}
+
+@keyframes pulse {
+  0% {
+     border-right: 3px solid  black;
+  }
+  50% {
+     border-right: 3px solid  transparent;
+  }
+  100% {
+     border-right: 3px solid  black;
+  }
+}
+
+/*For Mobile view*/ /*<360px*/
+/*    @media screen and (max-width: 360px)
+  {
+.thumbnail{width: 100px; height: 10x;}
+}*/
+</style>
+
+</head>
+<body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand"><img id="Logo" src="Logo.png" ></div>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active "><a href="index.html">Home</a></li>
+      <li><a href="calender.html">Calender</a></li>
+      <li><a href="branch.html">Our Branches</a></li>
+      <li><a href="PromotionsPage.html">Promotions</a></li>
+      <li><a href="Cetegory.html">Category</a></li>
+      <li><a href="feedbackform.html">Write a Feedback</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron main text-center" >
+ <div ><img src="Logo.png" alt=""></div> 
+</div>
+<div class="container">
+  <div class="tt-holder center">
+    <h2 class="tt">PROMOS AND MORE</h2>
+    <h2 class="tt">DISCOUNTS UP TO 10%</h2>
+    <h2 class="tt">EVEN MORE BENEFITS FOR MEMBERS!</h2>
+    <h2 class="tt">APPLY FOR MEMBERSHIP NOW</h2>
+    <h1 class="ttt"></h1>
+  </div>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" ></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item">
+        <img src="images/ChickenBurgers.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>All Chicken Burgers 10% at food court!</h3>
+          <p>previous promo</p>
+        </div>
+      </div>
+      <div class="item active">
+        <img src="images/Omurice.jfif" alt="">
+        <div class="carousel-caption">
+          <h3>New OmuRice at Food Court</h3>
+          <p>current Promo</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/chocolate.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>Chocolate 10% off Promo</h3>
+          <p>future promo</p>
+        </div>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+
+<!-- Food Court -->
+<div class="container">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading" id="color">
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" >Branches</a>
+        </h4>  
+      </div>
+
+<div id="collapse1" class=" panel-collapse ">
+  <div class="col-md-4">
+        <div class="thumbnail">
+        <img src="images/tanjong bunut.jpg" style="width:50%">
+         <div class="caption">
+          <p>Tanjung Bunut</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="thumbnail">
+        <img src="images/rimba.jpg" style="width:50%">
+         <div class="caption"> 
+          <p>Rimba</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="thumbnail">
+        <img src="images/gadong.jpg" style="width:50%">
+        <div class="caption">
+          <p>Gadong</p>
+        </div>
+    </div>
+  </div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- sponsers -->
+<div class="container">
+  <div class="panel panel-default">
+      <div class="panel-heading" id="color">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"  id="color">Sponsers</a>
+        </h4>
+<div id="collapse2" class=" panel-collapse">
+  <div class="col-md-4">
+<a data-toggle="tooltip" title="DST">   
+          <div class="thumbnail">
+          <img src="images/DST.png" style="height: 100px; width: 100px;" >
+        </div>
+        </a>
+  </div>
+  <div class="col-md-4">
+        <a data-toggle="tooltip" title="Bismi">
+          <div class="thumbnail"> 
+          <img src="images/bismi.jpg" style="height: 100px; width: 100px;">
+          </div>
+        </a>
+  </div>
+    <div class="col-md-4">
+        <a data-toggle="tooltip" title="Underarmour">
+          <div class="thumbnail">
+          <img src="images/underarmour.png" style="height: 100px; width: 100px;">
+          </div>
+        </a>
+  </div>
+  <div class="col-md-4">
+        <a data-toggle="tooltip" title="Propers12">
+          <div class="thumbnail">
+          <img src="images/mcgregor.jpg"  style="height: 100px; width: 100px;">
+          </div>
+        </a>      
+  </div>
+
+  <div class="col-md-4">
+    <a data-toggle="tooltip" title="Jollibee">
+      <div class="thumbnail">
+      <img src="images/jollibee.png"  style="height: 100px; width: 100px;">
+      </div>
+    </a>      
+</div>
+
+<div class="col-md-4">
+  <a data-toggle="tooltip" title="Nike">
+    <div class="thumbnail">
+    <img src="images/Nike.jpeg"  style="height: 100px; width: 100px;">
+    </div>
+  </a>      
+</div>
+
+</div>
+ </div> 
+  </div>
+   </div>
+    </div>
+     </div>
+
+
+<div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading" id="color">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" id="color">feedback from participants</a>
+        </h4>
+      </div>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse ">
+  <div class="media">
+    <div class="media-left media-top">
+      <img src="images/adam.jpg" class="media-object" style="height:80px;width:80px">
+      <p>Adam :</p>
+    </div>
+    <div class="media-body">
+      I'm at a payphone trying to call home
+      All of my change I spent on you
+      Where have the times gone?
+      Baby, it's all wrong
+      Where are the plans we made for two?
+      </div>
+  </div>
+  <hr>
+  <div class="media">
+    <div class="media-left media-middle">
+      <img src="images/eve.png" class="media-object" style="height:80px;width:80px">
+      <p>Eve :</p>
+    </div>
+    <div class="media-body">
+      12:30? AUTO, why didnt you wake me for morning announcements? Honestly, 
+      its the one thing I get to do on this ship. Well, good morning, everybody, 
+      and welcome to day 255,642 aboard the Axiom. As always, 
+      the weather is a balmy 72 degrees and sunny, and, uh—oh, 
+      I see the ships log is showing that today is the 700th anniversary of our five-year cruise. 
+      Well, Im sure our forefathers would be proud to know that 700 years later wed be doing the exact same thing they were doing.
+       So, be sure next mealtime to ask for your free sesquicentennial cupcake in a cup. Wow, look at that.
+    </div>
+  </div>
+  <hr>
+  <div class="media">
+    <div class="media-left media-bottom">
+      <img src="images/Mike.jpg" class="media-object" style="height:80px;width:80px">
+      <p>Mike Tyson :</p>
+    </div>
+    <div class="media-body">
+      I'm the best ever. I'm the most brutal and vicious, and most ruthless champion there's ever been. 
+      There's no one can stop me. Lennox is a conqueror? No, I'm Alexander, he's no Alexander. 
+      I'm the best ever. There's never been anybody as ruthless. I'm Sonny Liston,I'm Jack Dempsey. 
+      There's no one like me. I'm from their cloth. There's no one that can match me. My style is impetuous, 
+      my defense is impregnable, and I'm just ferocious. I want your heart. I want to eat his children.
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+<script>
+  const vis = (function () {
+  let stateKey,
+    eventKey,
+    keys = {
+      hidden: "visibilitychange",
+      webkitHidden: "webkitvisibilitychange",
+      mozHidden: "mozvisibilitychange",
+      msHidden: "msvisibilitychange"
+    };
+  for (stateKey in keys) {
+    if (stateKey in document) {
+      eventKey = keys[stateKey];
+      break;
+    }
+  }
+  return function (c) {
+    if (c) document.addEventListener(eventKey, c);
+    return !document[stateKey];
+  }
+})();
+
+let $elements = $(".tt-holder .tt");
+$(".ttt").tickerText($elements, 0, 0, 0, 0, 0.5, 2, false, "timerpause", "timerstop");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Super Munch Market</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/calendar-gc.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="javascript/calendar-gc.js"></script>
+
+<style type="text/css">
+
+.navbar-default{background-color: #ffffff }
+.main{background-color: #ff4128;; margin: auto }
+.container{background-color: #deb841}
+.navbar-brand{color: rgb(255, 251, 30);}
+.row{width:700px; height: 500px; margin: auto; position:relative; bottom: 25px;}
+#Logo{height: 70px; width: 70px;}
+img{width: 550px; height: 450px; margin: auto;}
+  
+a{border: 1px solid;}
+h2{text-align: center;}
+body{margin: auto;background-color: #f5f5f5}
+.hello{}
+h1{margin: auto; font-family: monospace;}
+.one{color: yellow; display: inline;}
+h4{text-align: center;}
+.panel-title{text-align: center;}
+.test{padding-top: 30px;}
+p{text-align: center;}
+.collapse{background-color: #6d6a75;;}
+#color{background-color: #ff4128;}
+.mu{justify-content: center; margin: auto;}
+/*For Mobile view*/ /*<360px*/
+/*    @media screen and (max-width: 360px)
+  {
+.thumbnail{width: 100px; height: 10x;}
+}*/
+.map{display: flex;}
+
+.flex-object{display: flex; flex: 50%;}
+
+</style>
+
+</head>
+<body onload="showLoc()">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand"><img id="Logo" src="Logo.png" ></div>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="calender.html">Calender</a></li>
+      <li class="active"><a href="branch.html">Our Branches</a></li>
+      <li><a href="PromotionsPage.html">Promotions</a></li>
+      <li><a href="Cetegory.html">Category</a></li>
+      <li><a href="feedbackform.html">Write a Feedback</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron main text-center" >
+ <div ><img src="Logo.png" alt=""></div> 
+</div>
+<div class="container map">
+  <div class="container">
+  <br>
+  <h1>Gadong mall branch</h1>
+    <div id="demo2" style="width: 500px; height: 500px" class="flex-object"></div>
+    <div>
+      <h4 class="flex-object">Address: WW48+6MP, Bandar Seri Begawan.
+        </h4>
+    </div>
+    <br>
+  <h1>Tanjong Bunut Branch</h1>
+    <div id="demo3" style="width: 500px; height: 500px" class="flex-object"></div>
+    <div>
+      <h4 class="flex-object">Address: Medan Tanjong Bunut, Jln Tutong, BF2920</h4>
+    </div>
+    <br>
+  <h1>Rimba Point Branch</h1>
+    <div id="demo4" style="width: 500px; height: 500px" class="flex-object"></div>
+    <div>
+      <h4 class="flex-object">Address: Jalan 18, Perumahan Negara Rimba, BE 3119</h4>
+    </div>
+    <br>
+  </div>
+</div>
+
+<script src=
+"https://maps.google.com/maps/api/js?sensor=false">
+</script>
+<script type="text/javascript">
+ function getlocation() {
+ if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(showLoc, errHand);
+ }
+ }
+ function showLoc(pos) {
+
+//first branch
+ latt = 4.905908681706213;
+ long = 114.91667705701235;
+ var lattlong = new google.maps.LatLng(latt, long);
+ var OPTions = {
+  center: lattlong,
+  zoom: 10,
+  mapTypeControl: true,
+  navigationControlOptions: {
+  style: google.maps.NavigationControlStyle.SMALL,
+  },
+ };
+ var mapg = new google.maps.Map(
+  document.getElementById("demo2"),
+  OPTions
+ );
+ var markerg = new google.maps.Marker({
+  position: lattlong,
+  map: mapg,
+  title: "first branch",
+ });
+
+ //second branch
+ latt = 4.889293557677369;
+ long = 114.85709007731471;
+ var lattlong = new google.maps.LatLng(latt, long);
+ var OPTions = {
+  center: lattlong,
+  zoom: 10,
+  mapTypeControl: true,
+  navigationControlOptions: {
+  style: google.maps.NavigationControlStyle.SMALL,
+  },
+ };
+ var mapg = new google.maps.Map(
+  document.getElementById("demo3"),
+  OPTions
+ );
+ var markerg = new google.maps.Marker({
+  position: lattlong,
+  map: mapg,
+  title: "second branch",
+ });
+
+ //third branch
+
+ latt = 4.951434104156557;
+ long = 114.90739875459577;
+ var lattlong = new google.maps.LatLng(latt, long);
+ var OPTions = {
+  center: lattlong,
+  zoom: 10,
+  mapTypeControl: true,
+  navigationControlOptions: {
+  style: google.maps.NavigationControlStyle.SMALL,
+  },
+ };
+ var mapg = new google.maps.Map(
+  document.getElementById("demo4"),
+  OPTions
+ );
+ var markerg = new google.maps.Marker({
+  position: lattlong,
+  map: mapg,
+  title: "third branch",
+ });
+
+ }
+ function errHand(err) {
+ switch (err.code) {
+  case err.PERMISSION_DENIED:
+  result.innerHTML =
+   "The application doesn't have the permission" +
+   "to make use of location services";
+  break;
+  case err.POSITION_UNAVAILABLE:
+  result.innerHTML = "The location of the device is uncertain";
+  break;
+  case err.TIMEOUT:
+  result.innerHTML = "The request to get user location timed out";
+  break;
+  case err.UNKNOWN_ERROR:
+  result.innerHTML =
+   "Time to fetch location information exceeded" +
+   "the maximum timeout interval";
+  break;
+ }
+ }
+</script>
+
+</body>
+</html>
